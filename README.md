@@ -163,6 +163,10 @@ Create Session:
 }
 ```
 
+## Demo Video
+
+<a href="demo-video.mp4"><img src="https://img.shields.io/badge/Watch-Final%20Demo-success?style=for-the-badge" alt="Watch Final Demo"></a>
+
 ## Notes for Examiner
 
 - The project has proper layered architecture.
