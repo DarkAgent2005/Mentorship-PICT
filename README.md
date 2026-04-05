@@ -163,10 +163,6 @@ Create Session:
 }
 ```
 
-## Demo Video
-
-- Play Demo: https://cdn.jsdelivr.net/gh/DarkAgent2005/Mentorship-PICT@main/docs/demo.html
-
 ## Notes for Examiner
 
 - The project has proper layered architecture.
