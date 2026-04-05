@@ -1,0 +1,179 @@
+{
+  "info": {
+    "name": "Mentorship Platform",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "c405deb8-f53a-43be-b2f7-27b6c85c5f77"
+  },
+  "item": [
+    {
+      "name": "Auth Login (Demo Mentor)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"riya.mentor@example.com\",\n  \"password\": \"Mentor@123\",\n  \"role\": \"MENTOR\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Auth Register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/register",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fullName\": \"Demo New User\",\n  \"email\": \"demo.new.user@example.com\",\n  \"password\": \"Demo@123\",\n  \"role\": \"MENTEE\",\n  \"yearsOfExperience\": 0,\n  \"bio\": \"Wants to improve backend skills\",\n  \"skills\": [\"java\"],\n  \"interests\": [\"spring boot\", \"mysql\"],\n  \"availableForMentorship\": true\n}"
+        }
+      }
+    },
+    {
+      "name": "Create Profile",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/profiles",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "profiles"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fullName\": \"Test Mentee\",\n  \"email\": \"test.mentee@example.com\",\n  \"role\": \"MENTEE\",\n  \"yearsOfExperience\": 0,\n  \"bio\": \"Learning backend\",\n  \"skills\": [\"java\"],\n  \"interests\": [\"spring boot\", \"mysql\"],\n  \"availableForMentorship\": true\n}"
+        }
+      }
+    },
+    {
+      "name": "Get All Profiles",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/profiles",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "profiles"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Mentor Matches",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/matches/mentee/3?limit=3",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "matches",
+            "mentee",
+            "3"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Session",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/sessions",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "sessions"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"mentorId\": 1,\n  \"menteeId\": 2,\n  \"topic\": \"REST API Design\",\n  \"scheduledAt\": \"2026-07-01T10:00:00\",\n  \"durationMinutes\": 60\n}"
+        }
+      }
+    },
+    {
+      "name": "List Sessions By User",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/sessions/user/3",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "sessions",
+            "user",
+            "3"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ]
+}
