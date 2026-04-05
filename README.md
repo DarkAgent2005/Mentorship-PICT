@@ -165,7 +165,7 @@ Create Session:
 
 ## Demo Video
 
-- Play Demo: https://darkagent2005.github.io/Mentorship-PICT/demo.html
+- Play Demo: https://cdn.jsdelivr.net/gh/DarkAgent2005/Mentorship-PICT@main/docs/demo.html
 
 ## Notes for Examiner
 
