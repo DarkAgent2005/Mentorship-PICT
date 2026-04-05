@@ -165,9 +165,7 @@ Create Session:
 
 ## Demo Video
 
-- Play in browser (direct file URL):
-  https://raw.githubusercontent.com/DarkAgent2005/Mentorship-PICT/main/Demo%20Video.mp4
-- Fallback (GitHub file page): [Demo Video.mp4](Demo%20Video.mp4)
+- Play Demo: https://darkagent2005.github.io/Mentorship-PICT/demo.html
 
 ## Notes for Examiner
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MentorMatch Demo Video</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #111a2b;
+      --text: #e8eefc;
+      --muted: #9bb0d6;
+      --accent: #3ddc97;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top right, #1d2a45 0%, var(--bg) 45%);
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .wrap {
+      width: min(980px, 100%);
+      background: color-mix(in srgb, var(--card) 92%, black 8%);
+      border: 1px solid #23324f;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.25rem, 1.1rem + 1vw, 1.9rem);
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .pill {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 10px;
+      background: rgba(61, 220, 151, 0.14);
+      border: 1px solid rgba(61, 220, 151, 0.4);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #2a3f66;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <span class="pill">MentorMatch Capstone Demo</span>
+    <h1>Project Demo Video</h1>
+    <p>Use the controls below to play the full walkthrough.</p>
+    <video controls preload="metadata" playsinline>
+      <source src="assets/demo.mp4" type="video/mp4">
+      Your browser does not support HTML5 video playback.
+    </video>
+  </main>
+</body>
+</html>
