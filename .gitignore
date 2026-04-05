@@ -1,0 +1,16 @@
+target/
+.idea/
+.vscode/
+*.iml
+*.log
+frontend/node_modules/
+frontend/dist/
+.env
+.env.*
+!/.env.example
+application-local.properties
+postman/*.postman_environment.json
+.DS_Store
+Thumbs.db
+Demo Video.mp4
+data/
