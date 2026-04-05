@@ -12,5 +12,4 @@ application-local.properties
 postman/*.postman_environment.json
 .DS_Store
 Thumbs.db
-Demo Video.mp4
 data/
