@@ -46,11 +46,32 @@ mvn clean install
 mvn spring-boot:run
 ```
 
+If port `8080` is busy, run on fallback port `8081`:
+
+```bash
+mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
+```
+
+You can also set an environment variable and run normally:
+
+```powershell
+$env:SERVER_PORT=8081
+mvn spring-boot:run
+```
+
 3. Base URL:
 
 ```text
 http://localhost:8080
 ```
+
+If fallback is used, base URL becomes:
+
+```text
+http://localhost:8081
+```
+
+Use the same selected port for all URLs below (`8080` by default, `8081` if fallback is used).
 
 4. Frontend UI:
 
